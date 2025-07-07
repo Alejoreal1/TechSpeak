@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/editarPerfil.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:ital,wght@0,300..900;1,300..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Editar Perfil</title>
+</head>
+
+<body>
+    <main>
+        <section id="seccion1">
+            <img id="tamañoLogo" src="../assets/images/logo.png" alt="logo">
+            <div id="ubicacionOpciones">
+                <div id="ubicacionImg">
+                    <img id="tamañoCybro" src="../assets/images/reverse.png" alt="cybro">
+                    <a id="txtPrincipal" href="../templates/principal.html">Principal</a>
+                </div>
+                <div id="ubicacionImg2">
+                    <img id="tamañoFoto" src="../assets/images/fotoPerfil.png" alt="perfil">
+                    <a id="txtPerfil" href="#">Perfil</a>
+                </div>
+            </div>
+
+        </section>
+        <div class="separador"></div>
+
+        <section id="seccion2">
+            <h1>Cuenta</h1>
+            <div id="cambioImg">
+                <p id="txtImgPerfil">Imagen de Perfil</p>
+                <input type="file" id="archivo" class="sinEstilo">
+                <label for="archivo" class="boton">Subir archivo</label>
+            </div>
+            <p id="tamañoMax">Tamaño máximo= 1 MB</p>
+
+            <div class="letraInfo">
+                <p class="txtInfo"> Nombre</p>
+                <input type="text">
+            </div>
+
+            <div class="letraInfo">
+                <p class="txtInfo">Usuario</p>
+                <input type="text">
+            </div>
+
+            <div class="letraInfo">
+                <p class="txtInfo">Correo</p>
+                <input type="email">
+            </div>
+
+            <div class="ubicacionSwitch">
+                <p class="txtSwitch">Conectar a Facebook</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="ubicacionSwitch">
+                <p class="txtSwitch">Conectar a Gmail</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="ubicacionSwitch">
+                <p class="txtSwitch">Conectar a Microsoft</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="ubicacionSwitch">
+                <p class="txtSwitch">Efectos de sonido</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="botones">
+                <button id="btnGuardar">Guardar cambios</button>
+                <button id="btnCerrarSesion">Cerrar sesión</button>
+            </div>
+
+            <a id="eliminar" href="../index.html">Eliminar mi cuenta</a>
+        </section>
+
+        <section id="seccion3">
+            <div id="cuadro">
+                <div id="ubicacionPerfil">
+                    <img id="fotoPerfil" src="../assets/images/fotoPerfil.png" alt="">
+                    <div id="ubicacionInf">
+                        <p id="nombrePerfil">Pepe-10</p>
+                        <a id="enlacePerfil" href="../templates/gestionPerfil.html">Ver Perfil</a>
+                    </div>
+                </div>
+                <div id="ubicacionEnlaces">
+                    <a id="cuenta" href="#">Cuenta</a>
+                    <a id="progreso" href="../templates/gestionPerfil.html">Progreso</a>
+                    <a id="contraseña" href="#">Contraseña</a>
+                </div>
+            <img id="cybroFondo" src="../assets/images/cybroTranspa.png" alt="">
+
+            </div>
+        </section>
+    </main>
+
+    <script src="../Js/editarPerfil.js"></script>
+</body>
+
+</html>

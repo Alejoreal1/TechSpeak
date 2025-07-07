@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+  position: relative; /* ¡Esto es lo más importante! */
+  z-index: 1; /* Asegura que el contenido esté encima de la línea */
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Más alto */
+  background: linear-gradient(to right, #0d00ff, #00cfff);
+  transform: skewY(4.7deg);
+  transform-origin: top right;
+}
+
+.botones {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  right: 70px;
+  top: -10px;
+  width: 330px;
+}
+
+#btnRegistro {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border-color: #12a9e0;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  height: 50px;
+  width: 150px;
+}
+
+#btnRegistro:hover {
+  background-color: #ffffff;
+  color: black;
+  border-color: #000000;
+  transition: 400ms;
+}
+
+#btnSesion {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border-color: #12a9e0;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  height: 50px;
+  width: 150px;
+}
+
+#btnSesion:hover {
+  background-color: #ffffff;
+  color: black;
+  border-color: #000000;
+  transition: 400ms;
+}
+
+#imgLogo {
+  height: 100px;
+  margin-left: 70px;
+  margin-top: 70px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  width: 80%;
+  padding-left: 10%;
+  font-family: "Lalezar", Arial, sans-serif;
+}
+
+#titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#titulo h1 {
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.numeral {
+  font-size: 30px;
+  margin-top: 2%;
+  margin-bottom: 0.5%;
+}
+
+.parrafo {
+  font-size: 20px;
+  margin-bottom: 2%;
+  color: #000000b7;
+}
+
+.lista {
+  font-size: 20px;
+  margin-left: 2%;
+  margin-bottom: 1%;
+  list-style-type: decimal;
+  color: #000000b7;
+}
+
+.viñeta {
+  font-size: 25px;
+  margin-bottom: 0.5%;
+}
+
+#email {
+  font-size: 20px;
+  color: #12a9e0;
+  text-decoration: none;
+}
+
+#email:hover {
+  text-decoration: underline;
+  color: #0077ff;
+  transition: 100ms;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  main {
+    width: 90%;
+    padding-left: 5%;
+  }
+
+  #imgLogo {
+    margin-left: 20px;
+  }
+}
+
+/* ≤1024px */
+@media (max-width: 1024px) {
+
+  .botones {
+    right: 0;
+    left: 0;
+    gap: 30px;
+    width: 40%;
+    margin: 0 30px 0 0;
+    justify-content: center;
+  }
+
+  #imgLogo {
+    margin-top: 10px;
+    height: 80px;
+  }
+  header::before {
+    transform: skewY(6.4deg);
+  }
+
+  #titulo h1 {
+    font-size: 40px;
+  }
+
+  .numeral,
+  .parrafo,
+  .lista,
+  .viñeta,
+  #email {
+    font-size: 24px;
+  }
+}
+@media (max-width: 922px) {
+   header::before {
+    transform: skewY(8.4deg);
+  }
+  .botones{
+    margin: 0 20px 0 0;
+  }
+}
+/* ≤768px */
+@media (max-width: 770px) {
+
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main {
+   width: 87%;
+   padding: 0;
+  }
+
+   header{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 30vh;
+        justify-content: space-around;
+    }
+    header::before {
+        top: -10px;
+        transform: skewY(0deg);
+        height: 43%;
+    }
+    #imgLogo {
+      width: 100px;
+      height: 90px;
+        margin: 0;
+    }
+
+    .botones{
+        width: 100%;
+        margin: 15px 0 0 0;
+        gap: 20px;
+    }
+
+    #btnRegistro {
+        width: 120px;
+    }
+
+    #btnSesion {
+        width: 120px;
+    }
+
+  #titulo h1 {
+    font-size: 35px;
+  }
+
+  .numeral,
+  .parrafo,
+  .lista,
+  .viñeta,
+  #email {
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,221 @@
+* {
+      margin: 0;
+      padding: 0;
+      font-family: "poppins", sans-serif;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 130px;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      background: linear-gradient(to right, #0d00ff, #00cfff);
+      transform: skewY(4.7deg);
+      transform-origin: top right;
+      height: 21%;
+      width: 100%;
+    }
+
+    #imgLogo {
+      height: 100px;
+      margin-left: 70px;
+      margin-top: 70px;
+    }
+
+    #pp {
+      display: flex;
+      height: 100px;
+      position: relative;
+      z-index: 1;
+    }
+
+    #informacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #perfil{
+        display: flex;
+        align-items: center;
+        color: black;
+        font-size: 20px;
+        z-index: 2;
+    }
+
+    .mid {
+      display: flex;
+      justify-content: center;
+      height: 600px;
+    }
+
+    .chat-container {
+      width: 100px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .chat-header {
+      background-color: #00aaff;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    #cybro {
+      width: 70px;
+      padding: 0 15px;
+      margin-bottom: 10px;
+    }
+
+    .chat-body {
+      padding: 15px;
+      height: 200px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .first-message {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .message {
+      max-width: 70%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 15px;
+      font-size: 14px;
+    }
+
+    .bot-message {
+      background-color: #eaeaea;
+      align-self: flex-start;
+    }
+
+    .user-message {
+      background-color: #00aaff;
+      color: white;
+      align-self: flex-end;
+    }
+
+    .chat-footer {
+      padding: 10px;
+      display: flex;
+      border-top: 1px solid #ddd;
+    }
+
+    .chat-footer input {
+      flex-grow: 1;
+      padding: 10px;
+      border: none;
+      outline: none;
+      border-radius: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .chat-footer button {
+      background-color: #00aaff;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 15px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .chat-footer button:hover {
+      background-color: #0088cc;
+    }
+    
+    /* Escritorio grande (Full HD y superior) */
+    @media (min-width: 1280px) {
+      .chat-container {
+        width: 480px;
+      }
+      .chat-body {
+        height: 450px;
+      }
+    }
+
+    @media (max-width:1280px) {
+      
+    header::before {
+      transform: skewY(7.6deg);
+    
+    }
+      .chat-container {
+        width: 480px;
+      }
+      .chat-body {
+        height: 450px;
+      }
+    }
+
+@media (max-width: 921px) {
+  header::before {
+      transform: skewY(8.4deg);
+    }
+
+    #imgLogo{
+      margin: 35px 0 0 60px;
+    }
+      .chat-container {
+        width: 450px;
+        height: 550px;
+      }
+      .mid{
+        align-items: end;
+      }
+}
+
+@media (max-width: 769px) {
+  header::before {
+      transform: skewY(15deg);
+      height: 19%;
+    }
+
+     #imgLogo{
+      width: 80px;
+      height: 80px;
+      margin: 35px 0 0 30px;
+    }
+}
+
+@media (max-width: 481px) {
+  header{
+    flex-direction: column-reverse;
+    height: 28vh;
+  }
+    header::before {
+        top: -10px;
+        transform: skewY(0deg);
+        height: 13%;
+    }
+    #imgLogo{
+      margin: 0;
+    }
+    #pp{
+      width: 85px;
+      height: 85px;
+    }
+
+    .chat-container {
+        width: 90%;
+        height: 530px;
+      }
+}

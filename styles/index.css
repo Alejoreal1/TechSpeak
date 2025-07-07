@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 700px;
+    width: 100%;
+}
+
+#circulos1 {
+    width: 190px;
+    margin: 0 0 2px 0;
+}
+
+#logo-titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 170px;
+    width: 100%;
+}
+
+#logo {
+    margin-left: 50px;
+    width: 120px;
+}
+
+#nombreProyecto {
+    width: 400px;
+}
+
+#cybro-Info {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    height: 650px;
+}
+
+#cybro {
+    width: 400px;
+}
+
+#huellas {
+    position: absolute;
+    z-index: -1;
+    margin-right: 220px;
+    margin-top: 50px;
+    width: 250px;
+}
+
+#informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    height: 380px;
+    width: 450px;
+}
+
+#textoInfo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #00BBFF;
+    font-size: 30px;
+}
+
+#boton1 {
+    cursor: pointer;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    color: white;
+    border-radius: 10px;
+    border-color: #12A9E0;
+    height: 70px;
+    width: 220px;
+}
+
+#boton1:hover {
+    background-color: #00BBFF;
+    color: black;
+    border-color: black;
+}
+
+.linea {
+    border: none;
+    height: 2px;
+    background-color: #2F00FF;
+    margin: 0 auto;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 24px;
+    margin: 40px 0;
+}
+
+#modulos {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #12A9E0;
+}
+
+#modulos:hover {
+    color: black;
+}
+
+#registro {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #12A9E0;
+}
+
+#registro:hover {
+    color: black;
+}
+
+#login {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #12A9E0;
+}
+
+#login:hover {
+    color: black;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+}
+
+#seccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+#texto2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #00BBFF;
+    width: 500px;
+}
+
+span {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    width: 450px;
+}
+
+#boton2 {
+    cursor: pointer;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #12A9E0;
+    line-height: 70px;
+    height: 70px;
+    width: 220px;
+}
+
+#boton2:hover {
+    background-color: #00BBFF;
+    color: black;
+    border-color: black;
+}
+
+.flecha-derecha {
+    cursor: default;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #00BBFF;
+    font-size: 130px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.flecha-derecha::after {
+    content: "→";
+    display: inline-block;
+    margin-left: 8px;
+    animation: moverFlecha 1s infinite alternate;
+    transition: transform 0.3s ease;
+}
+
+@keyframes moverFlecha {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(8px);
+    }
+}
+
+#circulos2 {
+    width: 190px;
+}
+
+#circulos3 {
+    width: 80px;
+}
+
+.lineaF {
+    border: none;
+    height: 2px;
+    background-color: #949292c9;
+    margin: 10px auto;
+    width: 95%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80px;
+}
+
+.ubicacionFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 90px;
+}
+
+#ubicacionFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70px;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #12A9E0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: grey;
+}
+
+.cuadroBoton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+@media (max-width: 1920px) {
+    #cybro-Info {
+        justify-content: space-evenly;
+    }
+
+    #huellas {
+        margin-right: 300px;
+    }
+}
+
+@media (max-width: 1880px) {
+    #cybro-Info {
+        justify-content: space-evenly;
+    }
+
+    #huellas {
+        margin-right: 280px;
+    }
+}
+
+@media (max-width: 1748px) {
+    #huellas {
+        margin-right: 240px;
+    }
+}
+
+@media (max-width: 1612px) {
+    #huellas {
+        margin-right: 200px;
+    }
+
+    
+}
+
+@media (max-width: 1482px) {
+    #huellas {
+        margin-right: 150px;
+    }
+}
+
+@media (max-width: 1400px) {
+    #cybro-Info {
+        justify-content: space-around;
+    }
+
+    #huellas {
+        margin-right: 220px;
+    }
+}
+
+@media (max-width: 1302px) {
+    #huellas {
+        margin-right: 160px;
+    }
+}
+
+@media (max-width: 1222px) {
+    #huellas {
+        margin-right: 160px;
+        width: 220px;
+    }
+}
+
+@media (max-width: 1170px) {
+    #huellas {
+        margin-right: 120px;
+    }
+}

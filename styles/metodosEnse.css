@@ -1,0 +1,417 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    background: linear-gradient(to right, #0d00ff, #00cfff);
+    transform: skewY(4.7deg);
+    transform-origin: top right;
+    height: 21%;
+    width: 100%;
+}
+
+.botones {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 70px;
+    top: -10px;
+    width: 330px;
+}
+
+#btnRegistro {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border-color: #12A9E0;
+    font-size: 15px;
+    height: 50px;
+    width: 150px;
+}
+
+#btnRegistro:hover {
+    background-color: #ffffff;
+    color: black;
+    border-color: #000000;
+    transition: 400ms;
+}
+
+#btnSesion {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border-color: #12A9E0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    height: 50px;
+    width: 150px;
+}
+
+#btnSesion:hover {
+    background-color: #ffffff;
+    color: black;
+    border-color: #000000;
+    transition: 400ms;
+}
+
+#btnempieza {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border-color: #12A9E0;
+    font-size: 20px;
+    height: 70px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#btnempieza:hover {
+    background-color: #00BBFF;
+    color: black;
+    border-color: #000000;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+#imgLogo {
+    height: 100px;
+    width: 100px;
+    margin-left: 70px;
+    margin-top: 30px;
+    z-index: 1;
+}
+
+body {
+    background-color: #ffffff;
+    color: #334155;
+    line-height: 1.6;
+}
+
+.content-container {
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 0%;
+}
+
+.Titulo {
+    font-size: 45px;
+    color: #000000;
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+    min-width: 300px;
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tagline-box {
+    background-color: #c0bcc4;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    border-radius: 50px;
+}
+
+.method-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cybro .robot-image {
+    width: 250px;
+    height: auto;
+}
+
+.method-info .method-title {
+    font-size: 25px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.method-description {
+    font-size: 20px;
+    color: #000000;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    width: 50%;
+    justify-self: center;
+}
+
+.burbuja {
+    font-size: 20px;
+}
+
+#visual {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.visual-circle {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visual-circle .classroom-image {
+    width: 100%;
+    height: 100%;
+}
+
+.visual-description .visual-description-text {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #000000;
+    max-width: 400px;
+    text-align: justify;
+}
+
+.collaborative-section {
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.collaborative-title {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 25px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.collaborative-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.collaborative-text {
+    font-size: 20px;
+    color: #000000;
+    max-width: 600px;
+    text-align: justify;
+}
+
+.linea-divisoria {
+    width: 100%;
+    height: 3px;
+    background-color: #00cfff;
+    padding: 0%;
+    margin: 0%;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 10px 10px 10px;
+    background-color: #ffffff;
+    color: #ecf0f1;
+    margin-top: 10px;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/*------------terminada---------------*/
+
+@media (max-width: 1416px) {
+    header::before {
+        transform: skewY(5.3deg);
+    }
+}
+
+@media (max-width:1254px) {
+    header::before {
+        transform: skewY(5.9deg);
+    }
+}
+
+@media (max-width: 1143px) {
+    header::before {
+        transform: skewY(6.6deg);
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        height: 100%;
+    }
+
+    .botones {
+        flex-direction: row;
+        justify-content: right;
+        right: 0;
+        width: 100%;
+        gap: 30px;
+        margin: 0 20px 0 0;
+
+    }
+
+    header::before {
+        transform: skewY(8deg);
+        height: 25%;
+
+    }
+
+    .Titulo {
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        gap: 0px;
+    }
+
+    #visual {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .right-section {
+        margin-top: 40px;
+        width: 100%;
+        padding: 20px;
+        height: 100%;
+    }
+
+    .method-description {
+        letter-spacing: 0.5px;
+        width: 100%;
+
+    }
+
+}
+
+@media (max-width: 922px) {
+    header::before {
+        transform: skewY(8.8deg);
+        height: 20%;
+    }
+
+    #imgLogo {
+        height: 90px;
+        margin: 30px 0 0 60px;
+    }
+
+    .botones {
+        gap: 20px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .method-description {
+        width: 70%;
+    }
+
+    .visual-description {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+}
+
+/*------------terminada--------------------*/
+@media (max-width: 770px) {
+    header{
+        flex-direction: column-reverse;
+        height: 29vh;
+        justify-content: space-around;
+    }
+    header::before {
+        top: -10px;
+        transform: skewY(0deg);
+        height: 13%;
+    }
+    #imgLogo {
+        margin: 0;
+    }
+
+    .botones{
+        justify-content: center;
+        margin: 15px 0 0 0;
+    }
+
+    #btnRegistro {
+        width: 120px;
+    }
+
+    #btnSesion {
+        width: 120px;
+    }
+
+    #btnempieza {
+        width: 40%;
+        font-size: 16px;
+        height: 60px;
+    }
+}
+
+/*-----------terminada----------*/
+
+@media (max-width: 480px) {
+
+    .method-title{
+        font-size: 25px;
+    }
+
+    .method-description{
+        font-size: 17px;
+        width: 90%;
+    }
+
+    .visual-description .visual-description-text {
+        font-size: 17px;
+    }
+    #visual{
+        font-size: 35px;
+    }
+    .collaborative-text{
+        text-align: justify;
+        font-size: 17px;
+    }
+    .collaborative-title{
+        font-size: 25px;
+    }
+    .student-avatar-image{
+        width: 300px;
+    }
+}

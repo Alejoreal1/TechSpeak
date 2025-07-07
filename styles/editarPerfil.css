@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#seccion1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 350px;
+    width: 20%;
+}
+
+#tamañoLogo {
+    width: 100px;
+}
+
+#ubicacionOpciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 200px;
+}
+
+#ubicacionImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150px;
+}
+
+#tamañoCybro {
+    width: 40px;
+}
+
+#txtPrincipal {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(138, 136, 136);
+}
+
+#txtPrincipal:hover {
+    color: #12A9E0;
+}
+
+#ubicacionImg2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+    width: 110px;
+}
+
+#tamañoFoto {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+#txtPerfil {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(138, 136, 136);
+}
+
+#txtPerfil:hover {
+    color: #12A9E0;
+}
+
+.separador {
+    width: 1px;
+    background-color: #0CD7DE;
+    margin: 0 20px;
+    height: 1200px;
+}
+
+#seccion2 {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    height: 110px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+#cambioImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+    height: 90px;
+    width: 40%;
+}
+
+#txtImgPerfil {
+    font-family: 'Poppins', sans-serif;
+    height: 31px;
+}
+
+.sinEstilo {
+    display: none;
+}
+
+.boton {
+    background-color: rgb(231, 228, 228);
+    color: black;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.boton:hover {
+    background-color: #0CD7DE;
+    color: white;
+}
+
+#textoAbajBoton {
+    font-family: 'Poppins', sans-serif;
+    color: rgba(168, 167, 167, 0.911);
+    font-size: 13px;
+    width: 60%;
+    text-align: center;
+    margin: -1;
+}
+
+#tamañoMax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(168, 167, 167, 0.911);
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    height: 30px;
+    width: 60%;
+}
+
+.letraInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: end;
+    height: 90px;
+    width: 70%;
+}
+
+.txtInfo {
+    font-family: 'Poppins', sans-serif;
+    width: 65px;
+}
+
+input {
+    padding: 0 0 0 3px;
+    border-radius: 5px;
+    height: 25px;
+    width: 480px;
+}
+
+#seccion3 {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    gap: 30px;
+}
+
+.ubicacionSwitch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+    height: 90px;
+    width: 40%;
+}
+
+.txtSwitch {
+    font-family: 'Poppins', sans-serif;
+    width: 173px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+/* Ocultar el checkbox original */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Estilo del slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 25px;
+}
+
+/* Círculo dentro del slider */
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 3px;
+    top: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* Cambia color cuando está activado */
+.switch input:checked+.slider {
+    background-color: #4CAF50;
+}
+
+/* Mueve el círculo cuando está activado */
+.switch input:checked+.slider::before {
+    transform: translateX(24px);
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 80px;
+    height: 150px;
+    width: 100%;
+}
+
+#btnGuardar {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border-color: #12A9E0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    height: 50px;
+    width: 150px;
+}
+
+#btnGuardar:hover {
+    background-color: #12A9E0;
+    color: black;
+    border-color: #000000;
+    transition: 400ms;
+}
+
+#btnCerrarSesion {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: rgb(231, 228, 228);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border-color: #12A9E0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    height: 50px;
+    width: 150px;
+}
+
+#btnCerrarSesion:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-color: #12A9E0;
+    transition: 400ms;
+}
+
+#eliminar {
+    display: inline-flex;
+    justify-content: center;
+    align-items: baseline;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+#seccion3 {
+    display: flex;
+    flex-direction: column;
+    border-color: #12A9E0;
+    border-radius: 3px;
+    height: 500px;
+    width: 35%;
+}
+
+#cuadro {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #12A9E0;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 50px;
+    height: 100%;
+    width: 70%;
+}
+
+#fotoPerfil {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+}
+
+#ubicacionPerfil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    height: 200px;
+    width: 80%;
+}
+
+#ubicacionInf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+}
+
+#nombrePerfil {
+    font-size: 20px;
+}
+
+#enlacePerfil {
+    text-decoration: none;
+    color: #12A9E0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#enlacePerfil:hover {
+    color: #0d769c;
+}
+
+#ubicacionEnlaces {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 40px;
+    height: 160px;
+}
+
+#cuenta {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: rgba(71, 71, 71, 0.911);
+    padding: 0 0 0 12px;
+    border-radius: 5px;
+    height: 40px;
+    width: 70%;
+}
+
+#cuenta:hover {
+    background-color: rgba(206, 205, 205, 0.911);
+    color: #000000;
+}
+
+#progreso {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: rgba(71, 71, 71, 0.911);
+    padding: 0 0 0 12px;
+    border-radius: 5px;
+    height: 40px;
+    width: 70%;
+}
+
+#progreso:hover {
+    background-color: rgba(206, 205, 205, 0.911);
+    color: #000000;
+}
+
+#contraseña {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: rgba(71, 71, 71, 0.911);
+    padding: 0 0 0 12px;
+    border-radius: 5px;
+    height: 40px;
+    width: 70%;
+}
+
+#contraseña:hover {
+    background-color: rgba(206, 205, 205, 0.911);
+    color: #000000;
+}
+
+#cybroFondo {
+    margin-left: 100px;
+    margin-top: 190px;
+    z-index: -1;
+    width: 350px;
+}
+
+@media (max-width: 1537px) {
+    .letraInfo{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1448px) {
+    .letraInfo{
+        width: 95%;
+    }
+    
+}
+@media (max-width: 1325px) {
+   input{
+    width: 60%;
+   }
+   #cambioImg{
+    width: 50%;
+   }
+   #tamañoMax{
+    width: 75%;
+   }
+   .ubicacionSwitch{
+    width: 45%;
+   }
+    
+}
+
+@media (max-width: 1159px) {
+  
+   #cambioImg{
+    width: 60%;
+   }
+   #tamañoMax{
+    width: 90%;
+   }
+   .ubicacionSwitch{
+    width: 55%;
+   }
+   #seccion3{
+    width: 550px;
+    justify-content: center;
+   }
+    
+}
+
+@media (max-width:1092px) {
+    #cambioImg{
+    width: 70%;
+   }
+   #tamañoMax{
+   margin: 0 0 0 7%;
+   }
+}

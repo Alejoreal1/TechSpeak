@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+  position: relative;
+  z-index: 1;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%!important;
+  background: linear-gradient(to right, #0d00ff, #00cfff);
+  transform: skewY(4.7deg);
+  transform-origin: top right;
+}
+
+.botones {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 70px;
+    top: -10px;
+    width: 330px;
+}
+
+#btnRegistro {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border-color: #12A9E0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    height: 50px;
+    width: 150px;
+}
+
+#btnRegistro:hover {
+    background-color: #ffffff;
+    color: black;
+    border-color: #000000;
+    transition: 400ms;
+}
+
+#btnSesion {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border-color: #12A9E0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    height: 50px;
+    width: 150px;
+}
+
+#btnSesion:hover {
+    background-color: #ffffff;
+    color: black;
+    border-color: #000000;
+    transition: 400ms;
+}
+
+#imgLogo {
+    height: 100px;
+    margin-left: 70px;
+    margin-top: 70px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titulo {
+    font-size: 45px;
+}
+
+#cuadroInfo {
+    display: flex;
+    align-items: center;
+    width: 1150px;
+    height: 440px;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+#cybro{
+    width: 390px;
+}
+
+#texto {
+    width: 550px;
+    font-size: 20px;
+    margin: 0 0 120px 0;
+}
+
+
+.linea {
+    background-color: #a5a5a5;
+    height: 2px;
+    width: 80%;
+    margin: 0 0 70px 0;
+}
+
+.cuadroGit {
+    display: flex;
+    align-items: center;
+    width: 900px;
+    justify-content: space-between;
+}
+
+#btnGitHub {
+    cursor: pointer;
+    width: 235px;
+    height: 235px;
+    border-radius: 50%;
+    background-color: #CBE6F5;
+}
+
+#btnGitHub:hover {
+    background-color: #30c9eb9a;
+}
+
+#git {
+    width: 160px;
+}
+
+.cuadroMySQL {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 900px;
+    justify-content: space-between;
+}
+
+#btnDato {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #CBE6F5;
+}
+
+#btnDato:hover {
+    background-color: #30c9eb9a;
+}
+
+.infoGit {
+    display: flex;
+    align-items: center;
+    background-color: #DBDBDB;
+    height: 200px;
+    width: 450px;
+    clip-path: polygon(100px 0%, 100% 0%, 100% 100%, 100px 100%, 0% 50%);
+    border-radius: 5px;
+}
+
+.tex {
+    margin: 0 0 0 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.infoDato{
+     display: flex;
+    align-items: center;
+    background-color: #DBDBDB;
+    height: 200px;
+    width: 450px;
+     clip-path: polygon(0% 0%,calc(100% - 100px) 0%, 100% 50%,calc(100% - 100px) 100%,0% 100% );
+    border-radius: 5px;
+}
+
+.modulo{
+    display: flex;
+    flex-direction: column;
+    height: 580px;
+    justify-content: space-between;
+}
+
+.texx{
+    margin: 0 40px 0 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.decora{
+   display: flex;
+   width: 100%;
+   justify-content: end;
+   margin-top: 70px;
+}
+
+#circu{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+@media (max-width: 1496px) {
+    header::before{
+        transform: skewY(4.8deg);
+        height: 19%;
+    }
+}
+@media (max-width: 1354px) {
+    header::before{
+        transform: skewY(5.2deg);
+        height: 19%;
+    }
+}
+@media (max-width: 1279px) {
+    header::before{
+        transform: skewY(5.6deg);
+        height: 19%;
+    }
+}
+@media (max-width: 1189px) {
+    header::before{
+        transform: skewY(5.9deg);
+        height: 19%;
+    }
+    #cuadroInfo{
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 1145px) {
+    header::before{
+        transform: skewY(6.3deg);
+        height: 20%;
+    }
+    #cuadroInfo{
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
+
+@media (max-width: 944px) {
+    header::before{
+        transform: skewY(7.6deg);
+        height: 20%;
+    }
+    #cuadroInfo{
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .botones{
+        margin: 0 30px 0 0;
+    }
+    #titulo {
+    font-size: 65px;
+
+    }
+    #texto {
+    width: 100%;
+    font-size: 25px;
+    margin: 0 0 130px 30px;
+    }
+}

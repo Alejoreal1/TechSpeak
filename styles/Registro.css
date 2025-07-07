@@ -1,0 +1,1208 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.circulos {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+.circulo {
+    position: absolute;
+    border-radius: 50%;
+    animation: flotar 1s ease-in-out infinite alternate;
+}
+
+.c1 {
+    background-color: #00A5EB;
+    bottom: 500px;
+    left: -20px;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+.c2 {
+    background-color: #004B71;
+    bottom: 490px;
+    left: 120px;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+.c3 {
+    background-color: #00BBFF;
+    bottom: 450px;
+    left: 35px;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+.c4 {
+    background-color: #B1EAFF;
+    bottom: 440px;
+    left: 130px;
+    width: 15px;
+    height: 15px;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+.c5 {
+    background-color: #00BBFF;
+    bottom: 540px;
+    right: 150px;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+.c6 {
+    background-color: #004B71;
+    bottom: 490px;
+    right: 7px;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+#figura {
+    position: absolute !important;
+    top: 0px !important;
+    right: 2px !important;
+    width: 200px;
+    z-index: 10;
+}
+
+.c7 {
+    background-color: #25FBE2;
+    position: fixed;
+    top: 470px;
+    left: -20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 0;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+.c8 {
+    background-color: #00BBFF;
+    position: fixed;
+    top: 400px;
+    left: -20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 0;
+    animation-delay: 0s;
+    animation-duration: 3.5s;
+}
+
+.c9 {
+    background-color: #B1EAFF;
+    position: fixed;
+    top: 450px;
+    left: 120px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 0;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+.c10 {
+    background-color: #004B71;
+    position: fixed;
+    top: 370px;
+    left: 80px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 0;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+.c11 {
+    background-color: #004B71;
+    position: fixed;
+    top: 320px;
+    left: 250px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 0;
+    animation-delay: 0s;
+    animation-duration: 3.5s;
+}
+
+.c12 {
+    background-color: #00BBFF;
+    position: fixed;
+    top: 850px;
+    right: 1000px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 0;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+.c13 {
+    background-color: #B1EAFF;
+    position: fixed;
+    top: 850px;
+    right: 900px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 0;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+.c14 {
+    background-color: #61CFD3;
+    position: fixed;
+    top: 470px;
+    right: -30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 0;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+.c15 {
+    background-color: #00BBFF;
+    position: fixed;
+    top: 400px;
+    right: 80px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 0;
+    animation-delay: 0s;
+    animation-duration: 3.5s;
+}
+
+.c16 {
+    background-color: #004B71;
+    position: fixed;
+    top: 370px;
+    right: 40px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 0;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+.c17 {
+    background-color: #B1EAFF;
+    position: fixed;
+    top: 440px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 0;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    justify-content: space-around;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+
+#logo{
+    width: 140px;
+}
+
+#tamañoFacebook {
+    width: 40px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#tamañoFacebook:hover {
+    transform: scale(1.2);
+}
+
+#tamañoGmail {
+    width: 34px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#tamañoGmail:hover {
+    transform: scale(1.2);
+}
+
+#tamañoMicrosoft {
+    width: 31px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#tamañoMicrosoft:hover {
+    transform: scale(1.2);
+}
+
+.fondo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    background: linear-gradient(to bottom, white 30%, rgba(0, 200, 255, 0.418) 80%);
+    border-radius: 3%;
+    box-shadow: 10px 15px 40px -5px;
+    height: 80%;
+    width: 45%;
+}
+
+#botonIngresar {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#botonIngresar:hover {
+    background-color: #ffffff;
+    border: black solid 2px;
+    color: black;
+}
+
+#cuadro {
+    display: flex;
+    width: 390px;
+    justify-content: space-between;
+}
+
+input {
+    border-radius: 8px;
+    padding: 0 0 0 5px;
+    height: 25px;
+    width: 99%;
+}
+
+.texto {
+    font-size: 13px;
+    width: 100px;
+}
+
+.infoRegistro {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    justify-content: space-between;
+}
+
+.UbicacionTextoyCaja {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60px;
+}
+
+@media (max-width: 1600px) {
+    .logo {
+        width: 150px;
+    }
+
+    .texto {
+        font-size: 20px;
+    }
+
+    .cuadroInfo {
+        height: 30%;
+    }
+
+    .UbicacionTextoyCaja {
+        height: 120px;
+    }
+
+    input {
+        height: 40px;
+        width: 100%;
+    }
+
+    #botonIngresar {
+        font-size: 20px;
+        border-radius: 35px;
+        height: 50px;
+        width: 190px;
+    }
+
+    #tamañoFacebook {
+        width: 58px;
+    }
+
+    #tamañoGmail {
+        width: 48px;
+    }
+
+    #tamañoMicrosoft {
+        width: 45px;
+    }
+
+    .c1 {
+        top: -50px;
+        left: -20px;
+        width: 240px;
+        height: 240px;
+    }
+
+    .c2 {
+        top: 150px;
+        left: 200px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .c3 {
+        top: 250px;
+        left: 70px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .c4 {
+        top: 300px;
+        left: 250px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .c5 {
+        top: 50px;
+        right: 140px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .c6 {
+        top: 90px;
+        right: 20px;
+    }
+
+    #figura {
+        top: 90px;
+        right: 50px;
+    }
+
+    .c7 {
+        top: 780px;
+        width: 240px;
+        height: 240px;
+    }
+
+    .c8 {
+        top: 650px;
+        left: 20px;
+    }
+
+    .c9 {
+        top: 700px;
+        left: 250px;
+    }
+
+    .c10 {
+        top: 590px;
+        left: 200px;
+    }
+
+    .c11 {
+        top: 540px;
+        left: 330px;
+    }
+
+    .c12 {
+        top: 900px;
+        left: 400px;
+    }
+
+    .c13 {
+        top: 870px;
+        left: 600px;
+    }
+
+    .c14 {
+        top: 780px;
+        width: 240px;
+        height: 240px;
+    }
+
+    .c15 {
+        top: 730px;
+        right: 200px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .c16 {
+        top: 640px;
+        right: 170px;
+    }
+
+    .c17 {
+        top: 650px;
+        right: 30px;
+    }
+}
+
+@media(max-width:1599px) {
+    .logo {
+        width: 140px;
+    }
+
+    .cuadroInfo {
+        height: 40%;
+    }
+
+    .texto {
+        font-size: 17px;
+    }
+
+    .UbicacionTextoyCaja {
+        height: 70px;
+    }
+
+    #botonIngresar {
+        font-size: 17px;
+        width: 160px;
+    }
+
+    #tamañoFacebook {
+        width: 45px;
+    }
+
+    #tamañoGmail {
+        width: 40px;
+    }
+
+    #tamañoMicrosoft {
+        width: 35px;
+    }
+
+    #figura {
+        top: 90px;
+        right: 50px;
+    }
+
+    .c1 {
+        top: -50px;
+        left: -20px;
+        width: 240px;
+        height: 240px;
+    }
+
+    .c2 {
+        top: 150px;
+        left: 200px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .c3 {
+        top: 250px;
+        left: 70px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .c4 {
+        top: 300px;
+        left: 250px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .c5 {
+        top: 50px;
+        right: 140px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .c6 {
+        top: 90px;
+        right: 20px;
+    }
+
+    .c7 {
+        top: 650px;
+        width: 240px;
+        height: 240px;
+    }
+
+    .c8 {
+        top: 570px;
+        left: 50px;
+    }
+
+    .c9 {
+        top: 650px;
+        left: 250px;
+    }
+
+    .c10 {
+        top: 520px;
+        left: 200px;
+    }
+
+    .c11 {
+        top: 470px;
+        left: 330px;
+    }
+
+    .c12 {
+        top: 700px;
+        left: 420px;
+    }
+
+    .c13 {
+        top: 710px;
+        left: 630px;
+    }
+
+    .c14 {
+        top: 680px;
+        width: 240px;
+        height: 240px;
+    }
+
+    .c15 {
+        top: 650px;
+        right: 250px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .c16 {
+        top: 550px;
+        right: 170px;
+    }
+
+    .c17 {
+        top: 580px;
+        right: 30px;
+    }
+}
+
+@media (max-width: 1537px) {
+    .espacioLogo{
+        justify-content: center;
+    }
+    .cuadroInfo{
+        height: 30%;
+    }
+    .c1 {
+        top: -60px;
+    }
+
+    .c9 {
+        top: 700px;
+    }
+
+    .c10 {
+        top: 550px;
+    }
+
+    .c11 {
+        top: 500px;
+    }
+
+    .c12 {
+        top: 740px;
+    }
+
+    .c13 {
+        top: 760px;
+    }
+
+}
+
+@media (max-width: 1496px) {
+    .c7 {
+        top: 580px;
+    }
+
+    .c8 {
+        top: 510px;
+    }
+
+    .c9 {
+        top: 630px;
+    }
+
+    .c10 {
+        top: 490px;
+    }
+
+    .c11 {
+        top: 450px;
+    }
+
+    .c12 {
+        top: 650px;
+        left: 400px;
+    }
+
+    .c13 {
+        top: 660px;
+        left: 610px;
+    }
+
+    .c14 {
+        top: 590px;
+    }
+
+    .c15 {
+        top: 560px;
+    }
+
+    .c16 {
+        top: 470px;
+    }
+
+    .c17 {
+        top: 500px;
+    }
+
+}
+
+@media (max-width: 1373px) {
+    .fondo {
+        height: 80%;
+        width: 50%;
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    .cuadroInfo {
+        width: 60%;
+    }
+
+    .UbicacionTextoyCaja {
+        height: 65px;
+    }
+
+    #figura {
+        width: 180px;
+    }
+
+    .c10 {
+        left: 150px;
+    }
+
+    .c11 {
+        left: 260px;
+    }
+
+    .c12 {
+        left: 300px;
+    }
+
+    .c13 {
+        left: 500px;
+    }
+
+    .c15 {
+        right: 200px;
+    }
+}
+
+@media(max-width:1300px) {
+    .c1 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .c2 {
+        width: 35px;
+        height: 35px;
+        left: 160px;
+        top: 130px;
+    }
+
+    .c3 {
+        top: 210px;
+        left: 70px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .c4 {
+        top: 240px;
+        left: 230px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .c7 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .c8 {
+        top: 495px;
+    }
+
+    .c9 {
+        left: 220px;
+    }
+
+    .c11 {
+        left: 230px;
+    }
+}
+
+@media(max-width:1190px) {
+    .fondo {
+        height: 80%;
+        width: 60%;
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    .cuadroInfo {
+        width: 60%;
+    }
+
+    .c1 {
+        width: 160px;
+        height: 160px;
+    }
+
+    .c2 {
+        top: 100px;
+        left: 130px;
+    }
+
+    .c3 {
+        top: 150px;
+    }
+
+    .c5 {
+        width: 45px;
+        height: 45px;
+    }
+
+    #figura {
+        width: 150px;
+    }
+
+    .c7 {
+        top: 590px;
+        width: 160px;
+        height: 160px;
+    }
+
+    .c8 {
+        top: 530px;
+        left: 30px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .c9 {
+        top: 640px;
+        left: 160px;
+    }
+
+    .c10 {
+        left: 110px;
+    }
+
+    .c11 {
+        left: 160px;
+    }
+
+    .c14 {
+        top: 600px;
+        width: 160px;
+        height: 160px;
+    }
+
+    .c15 {
+        top: 590px;
+        right: 160px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .c16 {
+        right: 120px;
+    }
+}
+
+@media (max-width: 1037px) {
+    .c2 {
+        left: 100px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .c3 {
+        top: 190px;
+        left: 30px;
+    }
+
+    .c4 {
+        top: 210px;
+        left: 130px;
+    }
+
+    .c5 {
+        right: 110px;
+    }
+
+    .c12 {
+        left: 230px;
+    }
+
+    .c13 {
+        left: 400px;
+    }
+
+    .c15 {
+        top: 550px;
+        right: 120px;
+    }
+}
+
+@media (max-width: 922px) {
+    #botonIngresar {
+        height: 45px;
+        width: 150px;
+        font-size: 16px;
+    }
+
+    #tamañoFacebook {
+        width: 40px;
+    }
+
+    #tamañoGmail {
+        width: 35px;
+    }
+
+    #tamañoMicrosoft {
+        width: 30px;
+    }
+
+    .c11 {
+        top: 560px;
+        left: 130px;
+    }
+
+    .c15 {
+        top: 560px;
+        right: 100px;
+    }
+
+    .c16 {
+        right: 100px;
+    }
+}
+
+@media (max-width: 770px) {
+    #logo{
+        width: 120px;
+    }
+    .fondo {
+        height: 80%;
+    }
+    .infoRegistro{
+        justify-content: center;
+        width: 75%;
+        height: 50%;
+    }
+    #cuadro{
+        flex-direction: column;
+        width: 100%;
+    }
+    #botonIngresar{
+        height: 40px;
+    }
+    .redes{
+        width: 65%;
+    }
+    .c5{
+        right: 90px;
+    }
+    .c7{
+        top: 640px;
+        left: -70px;
+    }
+    .c10{
+        left: 60px;
+    }
+    .c11{
+        display: none;
+    }
+    .c13{
+        display: none;
+    }
+    .c14{
+        top: 630px;
+    }
+    .c15{
+        top: 530px;
+        right: 20px;
+    }
+    .c16{
+        right: 70px;
+    }
+    .c17{
+        top: 490px;
+    }
+}
+
+@media (max-width: 482px) {
+    .logo {
+        width: 110px;
+    }
+
+    .cuadroInfo {
+        height: 35%;
+    }
+
+    #botonIngresar {
+        font-size: 14px;
+        width: 135px;
+        height: 40px;
+    }
+
+    .redes {
+        width: 70%;
+    }
+
+    #tamañoFacebook {
+        width: 35px;
+    }
+
+    #tamañoGmail {
+        width: 30px;
+    }
+
+    #tamañoMicrosoft {
+        width: 25px;
+    }
+
+    .c1 {
+        width: 140px;
+        height: 140px;
+    }
+
+    .c2 {
+        top: 70px;
+        height: 25px;
+        width: 25px;
+    }
+
+    .c3 {
+        top: 130px;
+        height: 35px;
+        width: 35px;
+    }
+
+    .c4 {
+        display: none;
+    }
+
+    .c5 {
+        right: 90px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .c6 {
+        top: 70px;
+        right: 10px;
+        height: 15px;
+        width: 15px;
+    }
+
+    #figura {
+        width: 120px;
+    }
+
+    .c7 {
+        top: 620px;
+        height: 130px;
+        width: 130px;
+    }
+
+    .c8 {
+        top: 560px;
+        height: 35px;
+        width: 35px;
+    }
+
+    .c9 {
+        left: 120px;
+    }
+
+    .c10 {
+        left: 60px;
+    }
+
+    .c11 {
+        display: none;
+    }
+
+    .c12 {
+        left: 160px;
+    }
+
+    .c13 {
+        display: none;
+    }
+
+    .c14 {
+        top: 630px;
+        height: 130px;
+        width: 130px;
+    }
+
+    .c15 {
+        right: 40px;
+    }
+
+    .c16 {
+        display: none;
+    }
+}
+
+@media (max-width: 353px) {
+    .fondo{
+        height: 75%;
+        width: 65%;
+        
+    }
+
+    input {
+        height: 25px;
+    }
+    .texto{
+        font-size: 15px;
+    }
+    #botonIngresar {
+        font-size: 13px;
+        width: 110px;
+        height: 30px;
+    }
+
+    #tamañoFacebook {
+        width: 30px;
+    }
+
+    #tamañoGmail {
+        width: 25px;
+    }
+
+    #tamañoMicrosoft {
+        width: 20px;
+    }
+
+    .c3 {
+        top: 100px;
+        left: 15px;
+    }
+
+    .c5 {
+        right: 55px;
+    }
+
+    #figura {
+        width: 100px;
+    }
+
+    .c7 {
+        display: none;
+    }
+
+    .c14 {
+        display: none;
+    }
+
+    .c8 {
+        top: 620px;
+    }
+
+    .c10 {
+        top: 550px;
+        left: 40px;
+    }
+
+    .c12 {
+        left: 80px;
+    }
+
+    .c15 {
+        right: 15px;
+    }
+}
